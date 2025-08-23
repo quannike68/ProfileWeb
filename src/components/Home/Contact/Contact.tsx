@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { FaFacebookF, FaYoutube, FaTwitter, FaInstagram } from "react-icons/fa";
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 
 const Contact = () => {

@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Home/Navbar/Nav";
 import Home from "@/components/Home/Home";
-import Hero from "@/components/Home/Hero/Hero";
 import LightRays from "@/components/Customer/LightRays";
 import Footer from "@/components/Home/Footer/Footer";
 

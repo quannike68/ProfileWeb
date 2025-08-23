@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import RotatingText from "@/components/Customer/RotatingText";
 import GradientText from "@/components/Customer/GradientText";

@@ -2,7 +2,6 @@
 
 import { Cursor } from "@/components/Customer/Cursor";
 import { navLinks } from "@/constant/constant";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { BiDownload } from "react-icons/bi";
 import { HiBars3BottomRight } from "react-icons/hi2";

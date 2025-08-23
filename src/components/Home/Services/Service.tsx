@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import { motion, Variants } from "framer-motion";
 import { dataCards } from "@/constant/constant";
 import ServiceCard from "./ServiceCard";

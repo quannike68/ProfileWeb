@@ -1,4 +1,4 @@
-import { div } from "motion/react-client";
+
 import React from "react";
 import Contact from "../Contact/Contact";
 

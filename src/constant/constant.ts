@@ -31,25 +31,25 @@ export const dataCards: typeCardProps[] = [
   {
     title: "UI and UX",
     description:
-      "Designing interfaces that are intuitive, efficient, and enjoyable to use.",
+      "Creating user-friendly interfaces with a focus on seamless interaction and engaging experiences.",
     icon: "cards/layer.png",
   },
   {
     title: "Web and Mobile App",
     description:
-      "Designing interfaces that are intuitive, efficient, and enjoyable to use.",
+      "Building responsive web and mobile applications that deliver performance and scalability.",
     icon: "cards/app.png",
   },
   {
     title: "Design & Creative",
     description:
-      "Designing interfaces that are intuitive, efficient, and enjoyable to use.",
+      "Transforming ideas into visual concepts through innovative and aesthetic design solutions.",
     icon: "cards/creative.png",
   },
   {
     title: "Development",
     description:
-      "Designing interfaces that are intuitive, efficient, and enjoyable to use.",
+      "Implementing clean, efficient, and maintainable code to turn concepts into real-world products.",
     icon: "cards/coding.png",
   },
 ];
