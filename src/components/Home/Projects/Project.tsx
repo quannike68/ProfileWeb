@@ -68,11 +68,11 @@ const Project = () => {
 
       <ConfirmLinkDialog
         open={open}
-        title="Rời trang?"
+        title="Leave this page?"
         type="info"
-        message="Bạn sắp chuyển sang GitHub của dự án. Tiếp tục chứ?"
-        confirmText="Đi tới GitHub"
-        cancelText="Ở lại"
+        message="You are about to be redirected to the project's GitHub. Continue?"
+        confirmText="Go to GitHub"
+        cancelText="Stay"
         onCancel={() => setOpen(false)}
         onConfirm={handleConfirm}
       />

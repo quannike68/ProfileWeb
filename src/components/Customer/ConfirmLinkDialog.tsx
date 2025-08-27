@@ -38,30 +38,29 @@ export default function ConfirmLinkDialog({
   onCancel,
   onConfirm,
 }: ConfirmLinkDialogProps) {
-  // Config cho từng loại dialog
   const typeConfig = {
     confirm: {
       icon: <FiCheckCircle className="text-green-500 w-6 h-6" />,
-      defaultTitle: "Xác nhận",
-      defaultMessage: "Bạn có chắc muốn thực hiện hành động này?",
+      defaultTitle: "Confirmation",
+      defaultMessage: "Are you sure you want to perform this action?",
       confirmClass: "bg-green-500 text-white hover:bg-green-600",
     },
     warning: {
       icon: <FiAlertTriangle className="text-yellow-500 w-6 h-6" />,
-      defaultTitle: "Cảnh báo",
-      defaultMessage: "Hành động này có thể không thể hoàn tác!",
+      defaultTitle: "Warning",
+      defaultMessage: "This action may not be reversible!",
       confirmClass: "bg-yellow-500 text-black hover:bg-yellow-600",
     },
     error: {
       icon: <FiXCircle className="text-red-500 w-6 h-6" />,
-      defaultTitle: "Lỗi",
-      defaultMessage: "Đã xảy ra lỗi, bạn có muốn thử lại?",
+      defaultTitle: "Error",
+      defaultMessage: "An error occurred, would you like to try again?",
       confirmClass: "bg-red-500 text-white hover:bg-red-600",
     },
     info: {
       icon: <FiInfo className="text-blue-500 w-6 h-6" />,
-      defaultTitle: "Thông báo",
-      defaultMessage: "Đây là một thông tin quan trọng.",
+      defaultTitle: "Information",
+      defaultMessage: "This is an important piece of information.",
       confirmClass: "bg-blue-500 text-white hover:bg-blue-600",
     },
   }[type];

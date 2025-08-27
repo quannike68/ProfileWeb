@@ -2,6 +2,7 @@ import Link from "next/link";
 import { navLinks } from "@/constant/constant";
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "motion/react";
+import { useEffect } from "react";
 export default function MobileNav({
   isOpen,
   setIsOpen,
@@ -9,6 +10,25 @@ export default function MobileNav({
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
 }) {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
+  const handleScrollView = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <>
       <motion.div
@@ -35,13 +55,18 @@ export default function MobileNav({
                    w-[80%] sm:w-[60%] bg-[#0E1A15] space-y-12 z-[100050] right-0 p-6 divide-y-3 divide-dashed divide-gray-500/30"
       >
         {navLinks.map((link) => (
-          <Link key={link.id} href={link.url}>
-            <p className="">{link.label}</p>
-          </Link>
+          <button
+            key={link.id}
+            onClick={() => {
+              handleScrollView(link.url), setIsOpen(!isOpen);
+            }} 
+          >
+            {link.label}
+          </button>
         ))}
 
         <button
-          className="flex w-1/2 flex-row  p-5 rounded-2xl  bg-gray-50 text-[#0E1A15] justify-center items-center space-x-8 "
+          className="flex w-1/2 flex-row p-3 md:p-5 rounded-2xl  bg-gray-50 text-[#0E1A15] justify-center items-center space-x-8 "
           onClick={() => setIsOpen(!isOpen)}
         >
           <span className="font-bold text-xl">Exit </span>

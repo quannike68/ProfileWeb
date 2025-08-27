@@ -9,7 +9,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Hero = () => {
   const controls = useAnimation();
-    const handleScrollView = (id: string) => {
+  const handleScrollView = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -55,7 +55,7 @@ const Hero = () => {
         </h2>
 
         <button
-          className="flex  flex-row  p-5 rounded-full text-xl  bg-[#40ffaa] hover:bg-[#1b927e] text-[#0E1A15] justify-center items-center space-x-8 "
+          className="flex  flex-row  md:p-5 p-3 rounded-full text-xl  bg-[#40ffaa] hover:bg-[#1b927e] text-[#0E1A15] justify-center items-center space-x-8 "
           onMouseEnter={() =>
             controls.start({
               x: [0, 5, 0],
@@ -66,8 +66,7 @@ const Hero = () => {
               },
             })
           }
-          onClick={() => handleScrollView('project')}
-
+          onClick={() => handleScrollView("project")}
           onMouseLeave={() => controls.stop()}
         >
           <span className="font-bold  ">See my work </span>

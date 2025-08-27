@@ -65,7 +65,7 @@ const Nav = () => {
               {navLinks.map((link) => (
                 <button
                   key={link.id}
-                  onClick={() => handleScrollView(link.url)} // dùng url làm id
+                  onClick={() => handleScrollView(link.url)}
                   className="text-base cursor-hover font-medium transition-all duration-200"
                 >
                   {link.label}
@@ -100,15 +100,15 @@ const Nav = () => {
       <ConfirmLinkDialog
         open={showCVDialog}
         type="confirm"
-        title="Tải xuống CV"
-        message="Bạn có muốn tải file CV ngay bây giờ?"
-        confirmText="Tải ngay"
-        cancelText="Hủy"
+        title="Download CV"
+        message="Do you want to download the CV file now?"
+        confirmText="Download"
+        cancelText="Cancel"
         onCancel={() => setShowCVDialog(false)}
         onConfirm={() => {
           setShowCVDialog(false);
           const link = document.createElement("a");
-          link.href = "/CV/QuanTran-VN.docx"; // hoặc cv.pdf
+          link.href = "/CV/QuanTran-VN.docx"; // or cv.pdf
           link.download = "TranHanQuan-CV.docx";
           document.body.appendChild(link);
           link.click();
