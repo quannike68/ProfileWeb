@@ -86,7 +86,7 @@ export const dataExperience: typeResumeCardProps[] = [
 export const dataMyEducation: typeResumeCardProps[] = [
   {
     date: "Jan 2020 - Dec 2025",
-    img: "/logoDH.png",
+    img: "/LogoDH.png",
     role: "Information Technology",
     description:
       "Studied advanced information technology concepts, problem-solving techniques, and modern tools for professional software development.",
